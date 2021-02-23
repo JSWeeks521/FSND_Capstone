@@ -17,7 +17,7 @@ class ActorTestCase(unittest.TestCase):
         # Define test variables and initialize app
         self.app = create_app()
         self.client = self.app.test_client
-        self.database_name = "test_agency"
+        self.database_name = "castingagency"
         self.database_path = "postgresql://{}/{}".format('localhost:5432',
                                                          self.database_name)
         setup_db(self.app, self.database_path)
@@ -171,7 +171,7 @@ class MovieTestCase(unittest.TestCase):
         # Define test variables and initialize app
         self.app = create_app()
         self.client = self.app.test_client
-        self.database_name = "test_agency"
+        self.database_name = "castingagency"
         self.database_path = "postgresql://{}/{}".format('localhost:5432',
                                                          self.database_name)
         setup_db(self.app, self.database_path)
