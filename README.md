@@ -16,6 +16,7 @@ Windows open a GitBash terminal.
         python -m venv venv
         source venv/Scripts/activate
         pip install -r requirements.txt
+        
 ```
 This will install all of the required packages within the **requirements.txt** file. Key dependencies include the following:
 
@@ -51,14 +52,13 @@ flask run
 ```
 
 #### Test Suite
-The main directory also contains a simple test suite for successful behavior of the API's endpoints and common errors. The test file is named test_app.py. Note if the JWT tokens have expired, you will have to generate new tokens and replace them in the constants at the top of the test file in order for the tests to run properly. Current tokens are valid until 3/1/21.
+The main directory contains a simple test suite for successful behavior of the API's endpoints and common errors usin Postman. The test file is named test_app.py. Note if the JWT tokens have expired, you will have to generate new tokens and replace them in the constants at the top of the test file in order for the tests to run properly. Current tokens are valid until GMT: Friday, February 26, 2021 5:28:56 PM  EST: Friday, February 26, 2021 12:28:56 PM GMT-05:00.
 
 ## API Reference
 
-### Heroku-Based API
-In order to interact with the live application hosted on [Heroku](https://www.heroku.com), you can send [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) requests to https://capstoneagency.herokuapp.com/
+### PostMan Testing API
 
-You can send these requests using [Postman](https://www.postman.com/) or [curl](https://curl.haxx.se/download.html). If you choose to use [Postman](https://www.postman.com/), you will find a ready-made collection in the file named [capstone_postman_collection](https://github.com/JSWeeks521/FSND_Capstone.git.capstone_postman_collection.json) located in the main project directory.
+You can send these requests using [Postman](https://www.postman.com/). If you choose to use [Postman](https://www.postman.com/), you will find a ready-made collection in the file named [capstone_postman_collection](https://github.com/JSWeeks521/FSND_Capstone/blob/main/Captstone.postman_collection.json) located in the main project directory.
 
 #### Setting Up Authentication
 In order to utilize the API, you will need to sign up as a user. Please visit the link below and sign up with your preferred email and password.
